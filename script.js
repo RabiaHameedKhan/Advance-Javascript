@@ -192,6 +192,7 @@
 
 const URL="https://cat-fact.herokuapp.com/facts";
 let catfacts= document.querySelector("#facts");
+console.log(catfacts);
 
 const getapi= async()=>{
     console.log("Fetching API.....");
@@ -203,7 +204,7 @@ const getapi= async()=>{
    console.log("Here is the fact 1: ", APIformat[0].text)
    console.log("Here is the fact 2: ", APIformat[1].text)
    console.log("Here is the fact 3: ", APIformat[2].text)
-   catfacts.innertext= APIformat[0].text;
+   catfacts.innerText=APIformat[0].text;
 
 }
 getapi();
